@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Music</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Background -->
+
+<div class="background">
+
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+<div class="blob blob3"></div>
+
+</div>
+
+<!-- HOME PAGE -->
+
+<section id="homePage">
+
+<header class="header">
+
+<div class="logo">
+
+<img src="images/logo.png" alt="Logo">
+
+<div>
+
+<h1>My Music</h1>
+
+<p>Your Favourite Music Player</p>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- Search -->
+
+<div class="search-box">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input
+type="text"
+id="artistSearch"
+placeholder="Search Artist...">
+
+</div>
+
+<!-- Artist Cards -->
+
+<div class="artist-grid">
+
+<div class="artist-card" data-id="honey">
+
+<div class="artist-image">
+
+<img src="images/Honey Singh.png">
+
+</div>
+
+<h2>Honey Singh</h2>
+
+<p>Open Playlist</p>
+
+<button>Open</button>
+
+</div>
+
+<div class="artist-card" data-id="sidhu">
+
+<div class="artist-image">
+
+<img src="images/Sidhu Moose Wala.png">
+
+</div>
+
+<h2>Sidhu Moose Wala</h2>
+
+<p>Open Playlist</p>
+
+<button>Open</button>
+
+</div>
+
+<div class="artist-card" data-id="pawan">
+
+<div class="artist-image">
+
+<img src="images/Pawan Singh.png">
+
+</div>
+
+<h2>Pawan Singh</h2>
+
+<p>Open Playlist</p>
+
+<button>Open</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PLAYLIST PAGE -->
+
+<section id="playlistPage" class="hidden">
+
+<div class="topBar">
+
+<button id="backHome">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+</button>
+
+<h2 id="artistTitle">
+
+Artist Playlist
+
+</h2>
+
+</div>
+
+<div class="artistProfile">
+
+<div class="circle">
+
+<img
+id="artistPhoto"
+src="">
+
+</div>
+
+<h3 id="artistName">
+
+Artist Name
+
+</h3>
+
+<p id="artistSongs">
+
+0 Songs
+
+</p>
+
+</div>
+
+<div class="search-box">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input
+type="text"
+id="songSearch"
+placeholder="Search Song...">
+
+</div>
+
+<ul id="songList">
+
+<!-- Songs JS se aayenge -->
+
+</ul>
+
+</section>
+
+<!-- ===========================
+     PLAYER PAGE
+=========================== -->
+
+<section id="playerPage" class="hidden">
+
+    <div class="topBar">
+
+        <button id="backPlaylist">
+            <i class="fa-solid fa-arrow-left"></i>
+        </button>
+
+        <h2>Now Playing</h2>
+
+    </div>
+
+    <div class="playerCard">
+
+        <!-- Artist Image -->
+
+        <div class="cover">
+
+            <img
+                id="playerImage"
+                src=""
+                alt="Artist">
+
+        </div>
+
+        <!-- Song -->
+
+        <h2 id="songTitle">
+
+            Song Name
+
+        </h2>
+
+        <p id="songArtist">
+
+            Artist Name
+
+        </p>
+
+        <!-- Progress -->
+
+        <div class="progress">
+
+            <div id="progressBar"></div>
+
+        </div>
+
+        <div class="time">
+
+            <span id="currentTime">
+                0:00
+            </span>
+
+            <span id="duration">
+                0:00
+            </span>
+
+        </div>
+
+        <!-- Controls -->
+
+        <div class="controls">
+
+            <button id="prevSong">
+
+                <i class="fa-solid fa-backward"></i>
+
+            </button>
+
+            <button id="playPause">
+
+                <i class="fa-solid fa-play"></i>
+
+            </button>
+
+            <button id="nextSong">
+
+                <i class="fa-solid fa-forward"></i>
+
+            </button>
+
+        </div>
+
+        <!-- Volume -->
+
+        <div class="volume">
+
+            <i class="fa-solid fa-volume-high"></i>
+
+            <input
+                type="range"
+                id="volume"
+                min="0"
+                max="100"
+                value="100">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+     AUDIO
+=========================== -->
+
+<audio id="audio"></audio>
+
+<!-- ===========================
+     LOADING SCREEN
+=========================== -->
+
+<div id="loader">
+
+    <div class="loaderGlass">
+
+        <div class="loaderCircle"></div>
+
+        <h2>
+
+            My Music
+
+        </h2>
+
+        <p>
+
+            Loading Your Music...
+
+        </p>
+
+    </div>
+
+</div>
+
+<!-- Floating Hearts -->
+
+<div id="hearts"></div>
+
+<!-- Background Particles -->
+
+<div id="particles"></div>
+
+<!-- Scripts -->
+
+<script src="artists.js"></script>
+
+<script src="songs.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
