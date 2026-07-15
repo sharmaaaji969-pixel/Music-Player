@@ -9,7 +9,7 @@ const songs = {
 
          {
             title: "Payal Honey Singh",
-            file: "music/Honey Singh/Payal Honey Singh.mp3"
+            file: "music/Honey Singh/Brown Rang.mp3"
         },
 
          {
@@ -20,7 +20,7 @@ const songs = {
 
         {
             title: "Brown Rang",
-            file: "music/Honey Singh/Brown Rang.mp3"
+            file: "music/Honey Singh/Payal Honey Singh.mp3"
         }
 
     ],
@@ -53,13 +53,13 @@ const songs = {
 
        {
             title: "Raja Ji",
-            file: "music/Pawan Singh/Raja Ji.mp3"
+            file: "music/Pawan Singh/Pudina.mp3"
         
         },
 
         {
             title: "Pudina",
-            file: "music/Pawan Singh/Pudina.mp3"
+            file: "music/Pawan Singh/Raja Ji.mp3"
         },
 
         {
