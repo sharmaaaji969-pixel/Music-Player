@@ -180,7 +180,7 @@ HEADER
 
 }
 
-.logo{
+.Logo{
 
     display:flex;
 
@@ -190,7 +190,7 @@ HEADER
 
 }
 
-.logo img{
+.Logo img{
 
     width:70px;
 
@@ -202,7 +202,7 @@ HEADER
 
 }
 
-.logo h1{
+.Logo h1{
 
     font-size:3rem;
 
@@ -210,7 +210,7 @@ HEADER
 
 }
 
-.logo p{
+.Logo p{
 
     opacity:.7;
 
